@@ -1,8 +1,8 @@
 create_location = (411, 47)
-name_location = (819, 245)
+name_location = (1004, 239)
 ok_location = (1432, 865)
 cancel_location = (1440, 970)
-menu_location = (1226, 890)
+menu_location = (793, 1057)
 end_mission_location = (982, 557)
 surrender_location = (978, 334)
 end_ok_location = (1461, 991)
@@ -11,7 +11,7 @@ quit_location = (875, 345)
 
 ok_pixel_location = (729, 444)
 observer_button_location = (356, 613)
-error_location = (948, 665)
+error_location = (1245, 524)
 
 observer_locations = [
     (545, 641), (935, 641), 
@@ -19,7 +19,7 @@ observer_locations = [
 ]
 
 chat_location = (479, 1036)
-diplomacy_location = (315, 745)
+game_start_location = (455, 747)
 observer_enable_delta = -40
 
 player_x = 772
