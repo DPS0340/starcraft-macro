@@ -26,6 +26,9 @@ def check_room_is_created() -> bool:
     print(error_rgb, constants.error_color)
     return error_rgb != constants.error_color
 
+def check_create_game_error() -> bool:
+    return not check_room_is_created()
+
 def submit_room_error() -> None:
     pyautogui.moveTo(*locations.error_ok_location, duration=1)
     pyautogui.click(duration=0.2)
@@ -163,6 +166,9 @@ def main():
                 if not is_full:
                     continue
                 start_game()
+                while check_create_game_error():
+                    submit_room_error()
+                    start_game()
                 time.sleep(12)
                 if not check_game_started():
                     submit_room_error()
