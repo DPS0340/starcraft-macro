@@ -142,7 +142,7 @@ def main():
                 break
             time.sleep(1)
             if not check_room_is_created():
-                time.sleep(2)
+                time.sleep(10)
                 submit_room_error()
                 time.sleep(0.5)
                 cancel_game()
@@ -165,6 +165,7 @@ def main():
                 start_game()
                 time.sleep(12)
                 if not check_game_started():
+                    submit_room_error()
                     start_game()
                     time.sleep(20)
                     if not check_game_started():
